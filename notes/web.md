@@ -45,4 +45,82 @@
          - e.g
              ?username=user&address=ngp
             
-            
+
+## componentes
+    - network 
+        it is responsible for sending the request and reciving the response 
+    - layout engine 
+        it is responsible for converting the html and css to JS objects
+    - javasript engine 
+        it is resposible for executing the JS code 
+    - user interface 
+            display output to the user
+    - web storgae
+        is is aslo know as data store 
+        e.g history , session , cookies 
+
+
+
+
+## server 
+     - machine which serves a request 
+     - server is not a hardware rather server is a software 
+     - types 
+        - web server
+                - server which serves the web (https or http) request 
+                e.g : apache2, IIS , express
+        - database server
+            server which persists the data 
+            e.g: RDBMS: MYSQL, Oracle
+                 NoSQL: MongoDB, Firebase
+
+
+## stack
+
+ - web stack 
+        - web server 
+        - database 
+        - language
+        - platform 
+
+        e.g : LAMP : Linux + Apache + MySQL + PHP/python/perl
+              MEAN :  MongoBD/Mysql + Express + Angular + Nodejs 
+              MERN 
+         
+
+## creates HTTP response
+    - object created to return the content when request 
+    - contains
+            - header : collection of key-value pair
+            - body: content
+    
+
+## status code
+  - used to represent the  status of server execution 
+  - types 
+        
+        - 1xx
+            - for debugging or informational messages
+            e.g: 100: continue, 101 : switcing protocol
+
+        - 2xx
+            - success
+            e.g: 200 OK
+                 201: created 
+                 202: Accepeted
+        -3xx
+            - redirection
+            e.g 300: multiple choice
+                301: moved permanently
+        -4xx
+            client error
+            e.g : 400: bad request
+                  401: unauthorized
+                  402: payment required
+                  403: forbidden
+                  404: Not Found
+        -5xx
+            server side error
+            e.g : 500: internal server error
+                    501: not implemented 
+                    502: bad gatway 
