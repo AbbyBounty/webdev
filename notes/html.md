@@ -38,7 +38,31 @@ Markup Language
         - types
 
 
+## Form 
+    - used for getting vaules from user 
+ - input
+    - used to get single line input from user
+    - types: 
+            - text
+            - date
+            - time
+            - submit
+            - reset
+    - attibutes
+        - readonly
+        - required
+        - placeholder
+        - maxlength 
+        - value
 
-            
-        
-    
+ - button
+                - radio
+                - checkbox
+                - file 
+                - password
+                - tel
+                - email 
+
+- textarea
+
+- select
