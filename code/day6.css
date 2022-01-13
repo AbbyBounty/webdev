@@ -1,0 +1,24 @@
+#id_selector{
+    border: 1px solid black;
+}
+#mobile{
+    color:red
+}
+
+#desktop{
+    color: green;
+}
+
+
+.class_selector{
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.mobile{
+    color:red
+}
+
+.desktop{
+    color: green;
+}
