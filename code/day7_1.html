@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+
+    <style>
+        input[type="text"] {
+            background-color: greenyellow;
+        }
+
+        .descendent h1 {
+            color: red;
+        }
+
+        .child>div {
+            background-color: bisque;
+        }
+
+        .general~div {
+            background-color: orange;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Attribute Selector -->
+    <div style="border:1px solid black; margin:10px; padding:10px ">
+        <h1>Attribute Selector</h1>
+        <div>
+            you can directly target any element by using Attribute selector
+        </div>
+        <label for="email">Email :</label>
+        <input type="text" name="" id="">
+    </div>
+
+    <!-- Descendent Selector -->
+    <div class="descendent" style="border:1px solid black; margin:10px; padding:10px ">
+        <h1>Descendent Selector</h1>
+        <div>
+            you can select element within same blcok
+        </div>
+        <label for="email">Email :</label>
+        <input type="text" name="" id="">
+    </div>
+
+
+    <!-- Child Selector -->
+    <div class="child" style="border:1px solid black; margin:10px; padding:10px ">
+        <h1>Child Selector</h1>
+        <div>
+            there is parent child relation , it selectos the element which are direct of parent.
+        </div>
+        <label for="email">Email :</label>
+        <input type="text" name="" id="">
+    </div>
+
+
+    <!-- general sibiling Selector -->
+    <div class="general" style="border:1px solid black; margin:10px; padding:10px ">
+        <h1> general sibiling selector </h1>
+        <div>
+            there is parent child relation , it selectos the element which are direct of parent.
+        </div>
+        <label for="email">Email :</label>
+        <input type="text" name="" id="">
+    </div>
+
+    
+
+
+
+</body>
+
+</html>
