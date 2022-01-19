@@ -58,3 +58,52 @@
     - vimn 
     - vmax
     - % 
+
+## Display
+    - flex
+    - grid 
+
+## Media queries
+    - you can make your web page by writing media queries and adding it to CSS
+    - e.g : 
+
+    `html
+     /* smartphone devices */
+        @media screen and (min-width : 420px) {
+            body {
+                background-color: aquamarine;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        /* tables screen i.e. mediam size screen */
+        @media screen and (min-width : 720px) {
+            body {
+                background-color: rgb(255, 200, 127);
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+        /* desktop screen i.e. larger  */
+        @media screen and (min-width : 1020px) {
+            body {
+                background-color: rgb(255, 127, 127);
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    `
+    

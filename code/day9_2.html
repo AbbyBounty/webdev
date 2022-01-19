@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid</title>
     <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
         body {
             background-color: rgba(44, 44, 44, 0.383);
         }
@@ -14,46 +18,68 @@
         .container {
             display: grid;
             grid-template-columns: auto;
-            grid-gap: 10px;
+            /* grid-gap: 2px; */
             width: 100%;
             height: 300px;
 
 
         }
-        .container>div{
-            border:1px solid red
 
-        }
+        .container>div {}
 
 
         .item-1 {
             grid-row: 1;
             grid-column: 1 / 5;
-            background-color: cadetblue;
+            background-color: rgb(45, 62, 80);
             display: grid;
-            grid-template-columns: repeat(4, 1fr );
+            grid-template-columns: repeat(4, 1fr);
             grid-column-gap: 10px;
             padding: 10px;
+            color: beige;
+            position: sticky;
+            top: 0px;
 
+        }
+
+        .header-menu1>span {
+            border: 1px solid beige;
+            padding: 5px;
+            border-radius: 3px;
         }
 
         .item-2 {
+            padding: 100px;
             grid-row: 2/10;
             grid-column: 1 / 5;
-            background-color: rgb(13, 58, 109);
+            background-color: rgb(12, 65, 100);
             display: grid;
-            grid-template-rows: repeat(3, 1fr);
-            justify-content: center;
+            grid-template-rows: repeat(2, 1fr);
+            align-items: center;
+
             justify-items: center;
-            grid-gap: 5px
+
         }
 
-        .banner-menu1>h1 {
-            color: beige;
+        .item-2>div {
+            text-align: center;
+
         }
+
+        .banner-menu1 {
+            color: beige;
+            /* align-items: center; */
+        }
+
+        .banner-menu1>span {
+            text-align: center;
+            font-size: 4rem;
+            padding: 3px;
+        }
+
 
         .banner-menu2 {
-            color: rgb(217, 143, 219);
+            color: rgb(45, 62, 80);
             border: 1px solid rgb(217, 143, 219);
             border-radius: 3px;
         }
@@ -62,9 +88,11 @@
             width: 200px;
             height: 40px;
             cursor: pointer;
-            background-color: bisque;
+            background-color: rgb(255, 255, 255);
             border: none;
             border-radius: 3px;
+            color: rgb(45, 62, 80);
+            ;
         }
 
 
@@ -78,7 +106,7 @@
             padding: 10px
         }
 
-       
+
 
         .item-4 {
             grid-row: 21/40;
@@ -88,7 +116,7 @@
         }
 
         .main-content>h3 {
-            color: rgb(131, 24, 173);
+            color: rgb(45, 62, 80);
         }
     </style>
 </head>
@@ -97,7 +125,7 @@
 
     <div class="container">
         <div class="item-1">
-            <div class="header-menu1"> <span>MYWEBSITE.com</span> </div>
+            <div class="header-menu1"> <span>MYWEBSITE</span> </div>
             <div class="header-menu2">Home</div>
             <div class="header-menu3">Tour</div>
             <div class="header-menu4">Sign Up</div>
@@ -105,14 +133,14 @@
         </div>
         <div class="item-2">
             <div class="banner-menu1">
-                <h1> Welcome to my website</h1>
+                <span> WELCOME TO MY WEBSITE</span>
+                <p>
+                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT.
+                </p>
             </div>
-            <div class="banner-menu2">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT.
 
-
-            </div>
             <div class="banner-menu3">
-                <button> Read More About Me </button>
+                <button> About Me </button>
             </div>
         </div>
         <div class="item-3">
@@ -137,9 +165,14 @@
             </div>
 
         </div>
-        <div class="item-4">item- 4</div>
+        <div class="item-4">item- 4
+
+            
+        </div>
 
     </div>
+
+    
 </body>
 
 </html>
