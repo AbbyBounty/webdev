@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .container {
+            /* display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 200px; */
+        }
+
+        .road {
+            margin: 200px 0;
+            width: 100%;
+            background-color: rgb(109, 109, 109);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            grid-template-columns: repeat (5, 1fr);
+
+
+        }
+
+        .road>div {
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            height: 30px;
+        }
+
+        .container .car {
+            position: absolute;
+            top: 270px;
+            width: 70px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: coral;
+            animation: myanimation 3s linear infinite;
+        }
+
+        @keyframes myanimation {
+
+            0% {
+                left: 0px;
+            }
+
+
+
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="car"></div>
+        <div class="road">
+            <div class="strips"></div>
+            <div class="strips"></div>
+            <div class="strips"></div>
+            <div class="strips"></div>
+            <div class="strips"></div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
