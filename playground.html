@@ -8,96 +8,66 @@
     <title>Document</title>
 
     <style>
-        html {
-            width: 100vw;
-            height: 100vh;
-            font-size: 62.33%;
-        }
-
-        @media (max-width:750px) {
-            html {
-                font-size: 55%;
-            }
-        }
-
-        @media (max-width:450px) {
-            html {
-                font-size: 50%;
-            }
-        }
-
         .container {
-            display: grid;
-            grid-template-columns: repeat (5, auto);
-            grid-template-rows: repeat (5, auto);
-
-            border: 1px solid black;
-            width: 100%;
-            height: 100%;
-
-        }
-
-
-
-        .container .box1 {
-            display: grid;
-            grid-template-rows: repeat (3, auto);
-
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            display: block;
+            border-radius: 50%;
+            transform: rotate(20deg);
+            color: aliceblue;
+            animation: scale-out-center 2s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
         }
 
-        .box-1-item-2>div {
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-            background-color: antiquewhite;
-            
-
+        .toggle {
+            display: none;
+            /* animation: scale-out-center 2s linear 1; */
         }
 
-        .container .box5 {
-            display: grid;
-            grid-template-rows: repeat (3, auto);
+        .box {
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            background-color: aliceblue;
         }
 
+        @keyframes scale-out-center {
+            from {
+                transform: rotate(-360deg);
+                background-color: rgb(21, 29, 29);
+            }
 
-        .container .box2 {
-            border: 1px solid yellow;
-            grid-row: 1/ 4;
-        }
-
-
-        .container .box4 {
-            border: 1px solid yellow;
-            grid-row: 1/ 4;
-        }
-
-
-        .container .box3 {
-            border: 1px solid rgb(0, 47, 255);
-            grid-row: 1/ 4;
+            to {
+                transform: rotate(360deg);
+                background-color: rgb(133, 36, 120);
+            }
         }
     </style>
 </head>
 
 <body>
 
+
     <div class="container">
-        <div class="box-1">
-            <div class="box-1-item-1"></div>
-            <div class="box-1-item-2">
-                <div></div>
-            </div>
-            <div class="box-1-item-3"></div>
+        <div class="box">
+
         </div>
-        <div class="box-2"></div>
-        <div class="box-3"></div>
-        <div class="box-4"></div>
-        <div class="box-5"></div>
     </div>
 
+    <!-- <button onclick="handleButton()">show/hide</button> -->
 
 
+    <script>
+        const handleButton = () => {
+            let container = document.querySelector(".container")
+            container.classList.toggle("toggle")
+            console.log("button clicked")
+        }
+    </script>
 </body>
 
 </html>
