@@ -49,5 +49,4 @@
         -easy to uderstand                            - tough to understand
         -it is simple debug                           - it is very complex 
         - it portable                                 - it can't be portable
-        - it needs compiler or interpreter            - it needs assembler 
-           for translation 
+       
