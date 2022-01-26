@@ -11,7 +11,7 @@
  - Programming Language:
     - General purpose language:
          a programming language that is broadly applicable over complex application.
-                E.g : C, C++, Java, Python etc 
+                E.g : C, C++, Python etc 
     - Markup Language:
                can write document in away that is very similar to text
                E.g: HTML, xhtml, xml
