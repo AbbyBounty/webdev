@@ -9,10 +9,12 @@
  - it is mutable 
  - let  and var are used to declare varibale
  - const is also used to declare  varibale
-   e.g : let number=10;
+   e.g : 
+   ```javascript
+   let number=10;
          var firstName="rayn"
          const cars= ['i20','i10','creta']
-
+````
 ## pre-defined objects
     - console
         - object that represents browser console
