@@ -11,7 +11,7 @@
  - const is also used to declare  varibale
    e.g : 
    ```javascript
-   let number=10;
+   let number=11;
          var firstName="rayn"
          const cars= ['i20','i10','creta']
 ````
