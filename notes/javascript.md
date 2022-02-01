@@ -14,7 +14,7 @@
    let number=11;
          var firstName="rayn"
          const cars= ['i20','i10','creta']
-````
+   ````
 ## pre-defined objects
     - console
         - object that represents browser console
@@ -44,3 +44,61 @@
             console.log("bye bye")
             }
     ```
+
+## pre-defined value
+  - undefined 
+  - NaN
+
+    e.g
+
+    ```javascript
+      const price = 100;
+
+      const fistName = "rayn";
+
+    const result= price * fistName
+
+    console.log(price + fistName)
+
+    console.log("🚀 ~ file: day14.js ~ line 8 ~ result", result)
+    ```
+
+  - infinity
+    e.g: 
+    ```javascript
+      let a=10;
+      let b=0;
+
+      console.log(10/0)
+    ````
+
+## data types
+   - number 
+    e.g:
+    ```javascript
+        let a=10;
+        console.log("🚀 ~ file: day14.js ~ line 15 ~ a", typeof(a))
+    ```
+
+   - string 
+   - boolean 
+
+## operators
+
+  - addition (+)
+  - division (/)
+  - multiplication (*)
+
+## comparison oprators
+  - double equal to (==)
+  - triple equal to (===)
+  - not equal to (!=)
+  - not equal to (!==)
+
+## function
+  - block of code which can be reused
+  - types:
+    - empty function:
+    - parameterless function
+    - parameterized function 
+    
