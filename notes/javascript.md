@@ -102,3 +102,41 @@
     - parameterless function
     - parameterized function 
     
+
+## higher order function (HOF)
+  - Map
+  ```javascript
+      const numbers=[2,5,1,8,9]
+
+        // to multipy all numbers by 2 
+
+        // const multiply=numbers.map( function (elem)  { return  elem * 2} )
+        // const multiply=numbers.map( (elem) => {elem * 2} )
+        const multiply=numbers.map( elem => elem * 2 )
+        console.log("🚀 ~ file: day16_1.js ~ line 8 ~ multiply", multiply)
+  ```
+  - Filter 
+   ```javascript
+      const numbers=[2,5,1,8,9]
+      const greterThanFive= numbers.filter(ele => ele > 5 )
+      console.log("🚀 ~ file: day16_1.js ~ line 14 ~ greterThanFive", greterThanFive)
+  ```
+
+  - Reduce
+   ```javascript
+      // if we want get summ of all elements of array
+      let initial=0;
+      const sum= numbers.reduce((total, ele)=> total+ele, initial )
+    console.log("🚀 ~ file: day16_1.js ~ line 18 ~ sum", sum)
+  ```
+
+## Objects
+  -  objects in javascript are property value pair
+  - e.g.:
+   ```javascript
+      const car = { 
+                    name : "i20" , 
+                    color: "gray" ,
+                    price: 7.2
+                 }
+   ```
